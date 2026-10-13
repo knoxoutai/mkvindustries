@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex" />
+<title>Request Received — MKV Industries</title>
+<link rel="icon" type="image/png" href="img/favicon.png" />
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root { --bg:#0b0d0c; --panel:#141816; --line:#2a332d; --text:#e7ece8; --muted:#9aa59d; --olive:#8fa36a; --olive2:#c6d4a4; --amber:#d6a45a; }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; display:flex; flex-direction:column; background:var(--bg); color:var(--text); font-family:Barlow,system-ui,sans-serif; font-size:17px; line-height:1.6; }
+  a { color:inherit; text-decoration:none; }
+  .wrap { width:min(1140px, calc(100% - 40px)); margin:0 auto; }
+  nav { border-bottom:1px solid var(--line); background:rgba(11,13,12,.9); }
+  .nav-inner { display:flex; align-items:center; justify-content:space-between; height:68px; gap:16px; }
+  .brand { display:flex; align-items:center; gap:10px; letter-spacing:.18em; font-family:"Barlow Condensed",sans-serif; font-weight:700; }
+  .mark { width:28px; height:28px; border:1.5px solid var(--olive); display:grid; place-items:center; font-size:12px; color:var(--olive2); }
+  .btn { display:inline-flex; align-items:center; border:1px solid var(--olive); color:var(--olive2); padding:12px 18px; letter-spacing:.12em; text-transform:uppercase; font-size:13px; font-weight:600; }
+  .btn.solid { background:var(--olive); color:#111; }
+  main { flex:1; display:grid; place-items:center; padding:64px 0; position:relative; overflow:hidden; }
+  main::before { content:""; position:absolute; inset:0; background:repeating-linear-gradient(180deg, transparent 0 3px, rgba(0,0,0,.08) 3px 4px), radial-gradient(ellipse at 50% 0%, rgba(143,163,106,.10), transparent 60%); pointer-events:none; }
+  .confirm { position:relative; width:min(640px, calc(100% - 40px)); background:#121614; border:1px solid var(--line); border-top:2px solid var(--olive); padding:36px 32px; }
+  .confirm .mark { width:44px; height:44px; font-size:20px; margin-bottom:20px; }
+  .kicker { color:var(--amber); letter-spacing:.22em; text-transform:uppercase; font-size:12px; font-weight:600; }
+  h1 { font-family:"Barlow Condensed",sans-serif; font-weight:600; text-transform:uppercase; font-size:clamp(40px,6vw,56px); line-height:.95; margin:10px 0 16px; }
+  p { color:var(--muted); margin:0 0 14px; }
+  p.lead { color:#d5ddd7; font-size:19px; }
+  .status { display:flex; flex-wrap:wrap; gap:8px; margin:22px 0 24px; }
+  .status span { border:1px solid var(--line); color:var(--muted); font-family:"Barlow Condensed",sans-serif; font-size:13px; letter-spacing:.14em; text-transform:uppercase; padding:6px 10px; }
+  .status .done { border-color:var(--olive); color:var(--olive2); }
+  .status .next { border-color:var(--amber); color:var(--amber); }
+  .note { font-size:14px; }
+  .actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:22px; }
+  footer { border-top:1px solid var(--line); padding:28px 0 40px; color:var(--muted); font-size:14px; }
+  .foot { display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+  .foot-links { display:flex; gap:18px; flex-wrap:wrap; }
+  .foot-links a:hover { color:var(--olive2); }
+  .brand img { height:46px; width:auto; display:block; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html" aria-label="MKV Industries home"><img src="img/mkv-logo.png" alt="MKV Industries" width="104" height="46" /></a>
+    <a class="btn" href="index.html">Back to site</a>
+  </div>
+</nav>
+<main>
+  <div class="confirm" role="status">
+    <span class="mark" aria-hidden="true">&#10003;</span>
+    <div class="kicker">Thank you</div>
+    <h1>Request received.</h1>
+    <p class="lead">Your request is with the MKV Industries team.</p>
+    <p>We review every submission personally. Expect a follow-up from us to confirm the details and schedule a brief. If an existing course or product already solves your problem, we'll tell you that up front.</p>
+    <div class="status" aria-label="Request status">
+      <span class="done">01 Received</span>
+      <span class="next">02 Fit assessment</span>
+      <span>03 Brief</span>
+    </div>
+    <p class="note">Need to add context or change the timeline? Reply to our follow-up and it goes straight to the team.</p>
+    <div class="actions">
+      <a class="btn solid" href="index.html">Return to site</a>
+      <a class="btn" href="index.html#work">Our capabilities</a>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div>&copy; 2026 MKV Industries LLC. Veteran-owned training and platform development.</div>
+    <div class="foot-links">
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <span>CAGE 90QJ3 &middot; UEI THP9YFX1MC16</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Terms & Conditions — MKV Industries</title>
+<meta name="description" content="Terms and conditions governing use of the MKV Industries LLC website." />
+<link rel="icon" type="image/png" href="img/favicon.png" />
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root { --bg:#0b0d0c; --panel:#141816; --line:#2a332d; --text:#e7ece8; --muted:#9aa59d; --body:#c9d1cb; --olive:#8fa36a; --olive2:#c6d4a4; --amber:#d6a45a; }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; scroll-padding-top:90px; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family:Barlow,system-ui,sans-serif; font-size:17px; line-height:1.65; }
+  a { color:inherit; text-decoration:none; }
+  .wrap { width:min(1140px, calc(100% - 40px)); margin:0 auto; }
+  nav { position:sticky; top:0; z-index:30; background:rgba(11,13,12,.9); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-inner { display:flex; align-items:center; justify-content:space-between; height:68px; gap:16px; }
+  .brand { display:flex; align-items:center; gap:10px; letter-spacing:.18em; font-family:"Barlow Condensed",sans-serif; font-weight:700; }
+  .mark { width:28px; height:28px; border:1.5px solid var(--olive); display:grid; place-items:center; font-size:12px; color:var(--olive2); }
+  .nav-links { display:flex; gap:22px; color:var(--muted); font-size:13px; letter-spacing:.1em; text-transform:uppercase; }
+  .nav-links a:hover { color:var(--text); }
+  .btn { display:inline-flex; align-items:center; border:1px solid var(--olive); color:var(--olive2); padding:12px 18px; letter-spacing:.12em; text-transform:uppercase; font-size:13px; font-weight:600; }
+  .kicker { color:var(--amber); letter-spacing:.22em; text-transform:uppercase; font-size:12px; font-weight:600; }
+  h1,h2,h3 { font-family:"Barlow Condensed",sans-serif; font-weight:600; margin:0 0 .35em; text-transform:uppercase; }
+  .page-head { border-bottom:1px solid var(--line); padding:72px 0 40px; background:linear-gradient(180deg,#101412,var(--bg)); }
+  .page-head h1 { font-size:clamp(44px,6vw,72px); line-height:.95; margin-top:10px; }
+  .page-head p { color:var(--muted); max-width:64ch; margin:14px 0 0; }
+  .meta { display:flex; flex-wrap:wrap; gap:8px; margin-top:22px; }
+  .meta span { border:1px solid var(--line); color:var(--olive2); font-family:"Barlow Condensed",sans-serif; font-size:13px; letter-spacing:.14em; text-transform:uppercase; padding:6px 10px; }
+  .layout { display:grid; grid-template-columns:240px 1fr; gap:56px; padding:56px 0 84px; }
+  .toc { position:sticky; top:96px; align-self:start; border-left:1px solid var(--line); padding-left:18px; }
+  .toc .kicker { display:block; margin-bottom:10px; }
+  .toc ol { list-style:none; margin:0; padding:0; counter-reset:t; }
+  .toc li { counter-increment:t; }
+  .toc a { display:block; padding:5px 0; color:var(--muted); font-size:14px; }
+  .toc a::before { content:counter(t, decimal-leading-zero) "  "; color:var(--olive); font-family:"Barlow Condensed",sans-serif; letter-spacing:.1em; }
+  .toc a:hover { color:var(--text); }
+  article { max-width:72ch; }
+  article section { padding:0 0 34px; margin:0 0 34px; border-bottom:1px solid var(--line); }
+  article section:last-child { border-bottom:0; }
+  .num { color:var(--olive); font-family:"Barlow Condensed",sans-serif; letter-spacing:.14em; font-size:14px; }
+  article h2 { font-size:30px; line-height:1.05; margin-top:4px; }
+  article h3 { font-size:19px; letter-spacing:.06em; color:var(--olive2); margin:22px 0 6px; }
+  article p, article li { color:var(--body); }
+  article p { margin:0 0 14px; }
+  article ul { margin:0 0 14px; padding-left:20px; }
+  article li { margin:6px 0; }
+  article li::marker { color:var(--olive); }
+  article strong { color:var(--text); font-weight:600; }
+  article a { color:var(--olive2); border-bottom:1px solid rgba(143,163,106,.4); }
+  article a:hover { border-color:var(--olive2); }
+  .caps { text-transform:uppercase; font-size:15px; letter-spacing:.02em; }
+  .callout { border:1px solid var(--line); border-left:3px solid var(--amber); background:#121614; padding:20px 22px; margin:6px 0 16px; }
+  .callout .kicker { display:block; margin-bottom:6px; }
+  .callout p:last-child { margin:0; }
+  .contact-card { border:1px solid var(--line); background:#121614; padding:20px 22px; color:var(--body); }
+  .fill { color:var(--amber); border-bottom:1px dashed var(--amber); }
+  footer { border-top:1px solid var(--line); padding:28px 0 40px; color:var(--muted); font-size:14px; }
+  .foot { display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+  .foot-links { display:flex; gap:18px; flex-wrap:wrap; }
+  .foot-links a:hover, .foot-links a[aria-current] { color:var(--olive2); }
+  @media (max-width:860px) {
+    .nav-links { display:none; }
+    .layout { grid-template-columns:1fr; gap:28px; padding-top:36px; }
+    .toc { position:static; border-left:0; border:1px solid var(--line); padding:16px 18px; }
+    .page-head { padding:52px 0 32px; }
+  }
+  .brand img { height:46px; width:auto; display:block; }
+</style>
+</head>
+<body>
+<!--
+  LEGAL PAGE: DRAFT FOR REVIEW
+  - Replace every [contact email] placeholder (shown in amber) before publishing.
+  - Have counsel review before launch, especially if you add analytics, a CRM, or newsletters, or start serving clients outside the U.S.
+  - Update the "Last updated" date whenever this page changes.
+-->
+<nav>
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html" aria-label="MKV Industries home"><img src="img/mkv-logo.png" alt="MKV Industries" width="104" height="46" /></a>
+    <div class="nav-links">
+      <a href="index.html#work">Approach</a>
+      <a href="index.html#platforms">Experience</a>
+      <a href="index.html#method">Engagement</a>
+      <a href="index.html#brief">Contact</a>
+    </div>
+    <a class="btn" href="index.html#brief">Request a brief</a>
+  </div>
+</nav>
+<header class="page-head">
+  <div class="wrap">
+    <div class="kicker">Legal</div>
+    <h1>Terms & Conditions</h1>
+    <p>The rules for using this website. Services themselves are provided only under a separate written agreement, and that agreement controls for any engagement.</p>
+    <div class="meta"><span>Effective October 12, 2026</span><span>Last updated October 12, 2026</span></div>
+  </div>
+</header>
+<main class="wrap layout">
+  <aside class="toc" aria-label="On this page">
+    <span class="kicker">On this page</span>
+    <ol>
+      <li><a href="#acceptance">Acceptance of these terms</a></li>
+      <li><a href="#no-offer">Information only; no offer or contract</a></li>
+      <li><a href="#submissions">Requests and submissions</a></li>
+      <li><a href="#controlled-information">Classified, CUI, and export-controlled information</a></li>
+      <li><a href="#export">Export compliance</a></li>
+      <li><a href="#government-references">Government references and endorsement</a></li>
+      <li><a href="#intellectual-property">Intellectual property</a></li>
+      <li><a href="#acceptable-use">Acceptable use</a></li>
+      <li><a href="#third-party">Third-party links and services</a></li>
+      <li><a href="#disclaimers">Disclaimers</a></li>
+      <li><a href="#liability">Limitation of liability</a></li>
+      <li><a href="#indemnification">Indemnification</a></li>
+      <li><a href="#governing-law">Governing law and venue</a></li>
+      <li><a href="#changes">Changes and termination</a></li>
+      <li><a href="#general">General</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </aside>
+  <article>
+    <section id="acceptance">
+      <div class="num">01</div>
+      <h2>Acceptance of these terms</h2>
+<p>These Terms and Conditions ("Terms") govern your use of the website operated by MKV Industries LLC ("MKV Industries," "we," "us," or "our"). By accessing or using this site, you agree to these Terms and to our <a href="privacy.html">Privacy Policy</a>. If you do not agree, do not use the site.</p>
+      <p>If you use this site on behalf of an organization or government agency, you represent that you are authorized to accept these Terms on its behalf.</p>
+    </section>
+    <section id="no-offer">
+      <div class="num">02</div>
+      <h2>Information only; no offer or contract</h2>
+<p>This website describes our capabilities for general informational purposes. Nothing on the site is an offer, quote, proposal, or commitment to provide any service, platform, or price.</p>
+      <p>We provide services only under a separate written agreement, such as a signed contract, statement of work, purchase order, task order, or federal contract award (each, an "Engagement Agreement"). If an Engagement Agreement conflicts with these Terms, the Engagement Agreement controls for that engagement.</p>
+    </section>
+    <section id="submissions">
+      <div class="num">03</div>
+      <h2>Requests and submissions</h2>
+<p>When you submit a request or contact us, you agree to provide accurate information and to have the authority to share it. Submitting a request does not create a client relationship, an obligation for either party to proceed, or any agency, partnership, or employment relationship. We may decline any request at our discretion.</p>
+      <p>Information sent through the website is not treated as confidential unless it is covered by a signed nondisclosure agreement or Engagement Agreement. <strong>Please don't send proprietary or confidential information until an appropriate agreement is in place.</strong> You grant us permission to use what you submit to evaluate and respond to your request.</p>
+    </section>
+    <section id="controlled-information">
+      <div class="num">04</div>
+      <h2>Classified, CUI, and export-controlled information</h2>
+<div class="callout">
+        <span class="kicker">Do not submit</span>
+        <p>You must not submit classified information, Controlled Unclassified Information (CUI), or export-controlled technical data through this website, its forms, or unencrypted email. This site is not an authorized system for that information.</p>
+      </div>
+      <p>If an engagement requires access to controlled information, we will establish an authorized method of handling it in accordance with applicable regulations and contract requirements before any exchange takes place.</p>
+    </section>
+    <section id="export">
+      <div class="num">05</div>
+      <h2>Export compliance</h2>
+<p>Some of our services, training content, and technical data may be subject to U.S. export control and sanctions laws, including the International Traffic in Arms Regulations (ITAR), the Export Administration Regulations (EAR), and regulations administered by the Office of Foreign Assets Control (OFAC).</p>
+      <p>You agree to comply with those laws. We do not provide services to, or engage with, persons or entities on U.S. government restricted-party lists or in sanctioned jurisdictions. We may ask for citizenship, end-use, or end-user information, and we may decline or suspend any engagement to stay in compliance.</p>
+    </section>
+    <section id="government-references">
+      <div class="num">06</div>
+      <h2>Government references and endorsement</h2>
+<p>References on this site to U.S. government agencies, military service, programs, or registrations (such as SAM.gov, CAGE code, and UEI) are provided for identification and background only. They do not mean that the U.S. Government, the Department of Defense, the U.S. Air Force, or any agency endorses MKV Industries or its services.</p>
+    </section>
+    <section id="intellectual-property">
+      <div class="num">07</div>
+      <h2>Intellectual property</h2>
+<p>The content of this site, including text, graphics, images, layout, logos, and the MKV Industries name and marks, is owned by or licensed to MKV Industries and is protected by U.S. and international intellectual property laws.</p>
+      <p>We grant you a limited, revocable, non-exclusive, non-transferable license to view and print pages from this site for your own internal evaluation of our services. You may not copy, modify, distribute, sell, republish, or create derivative works from site content, or use it to train machine-learning or AI models, without our prior written permission.</p>
+      <p>Ownership of, and rights to, any deliverables, training materials, software, or technical data created during an engagement are governed solely by the applicable Engagement Agreement, including any applicable FAR or DFARS data-rights clauses.</p>
+    </section>
+    <section id="acceptable-use">
+      <div class="num">08</div>
+      <h2>Acceptable use</h2>
+<p>You agree not to:</p>
+      <ul>
+        <li>Use the site for any unlawful, fraudulent, or harmful purpose</li>
+        <li>Probe, scan, or test the vulnerability of the site or any related system, or attempt to bypass security or access controls</li>
+        <li>Upload or transmit malware or any other harmful code</li>
+        <li>Interfere with or disrupt the site, its servers, or its networks</li>
+        <li>Scrape, crawl, or harvest content or data through automated means, except standard search-engine indexing</li>
+        <li>Impersonate any person or organization, or misrepresent your affiliation with a government agency or company</li>
+        <li>Send spam or unsolicited commercial messages through the contact form</li>
+      </ul>
+      <p>If you believe you have found a security vulnerability, please report it to us privately rather than testing it further.</p>
+    </section>
+    <section id="third-party">
+      <div class="num">09</div>
+      <h2>Third-party links and services</h2>
+<p>This site may contain links to, or rely on, websites and services operated by third parties. We do not control them and are not responsible for their content, availability, or practices. Your use of them is at your own risk and subject to their terms.</p>
+    </section>
+    <section id="disclaimers">
+      <div class="num">10</div>
+      <h2>Disclaimers</h2>
+<p>Descriptions of training, planning, and platform capabilities on this site are general in nature. They are not operational, tactical, safety, legal, or technical guidance for any specific situation, and you should not rely on them as such.</p>
+      <p class="caps">The site and its content are provided "as is" and "as available," without warranties of any kind, whether express or implied, including warranties of merchantability, fitness for a particular purpose, accuracy, and non-infringement. We do not warrant that the site will be uninterrupted, error-free, or free of harmful components.</p>
+    </section>
+    <section id="liability">
+      <div class="num">11</div>
+      <h2>Limitation of liability</h2>
+<p class="caps">To the fullest extent permitted by law, MKV Industries and its owners, officers, employees, and contractors will not be liable for any indirect, incidental, special, consequential, exemplary, or punitive damages, or for any loss of profits, revenue, data, or goodwill, arising out of or relating to your use of, or inability to use, this site, even if advised of the possibility of such damages.</p>
+      <p class="caps">Our total liability for any claim arising out of or relating to this site or these Terms will not exceed one hundred U.S. dollars (US $100).</p>
+      <p>These limits apply to your use of the website only. Liability for services is governed by the applicable Engagement Agreement. Some jurisdictions do not allow certain limitations, so some of the above may not apply to you.</p>
+    </section>
+    <section id="indemnification">
+      <div class="num">12</div>
+      <h2>Indemnification</h2>
+<p>You agree to defend, indemnify, and hold harmless MKV Industries and its owners, officers, employees, and contractors from any claims, damages, losses, and expenses, including reasonable attorneys' fees, arising out of your misuse of the site, your violation of these Terms, or your violation of any law or third-party right. This section does not apply to U.S. government agencies to the extent it is prohibited by federal law.</p>
+    </section>
+    <section id="governing-law">
+      <div class="num">13</div>
+      <h2>Governing law and venue</h2>
+<p>These Terms are governed by the laws of the State of Nevada, without regard to its conflict-of-law rules. Any dispute arising out of or relating to these Terms or this site will be brought exclusively in the state or federal courts located in Clark County, Nevada, and you consent to their jurisdiction.</p>
+      <p>Nothing in these Terms limits any rights or procedures that apply under federal law to disputes involving a U.S. government customer, including the Contract Disputes Act.</p>
+    </section>
+    <section id="changes">
+      <div class="num">14</div>
+      <h2>Changes and termination</h2>
+<p>We may update these Terms at any time by posting a revised version on this page and changing the "Last updated" date. Your continued use of the site after changes are posted means you accept the revised Terms.</p>
+      <p>We may suspend or restrict access to the site, in whole or in part, at any time and for any reason, including violation of these Terms.</p>
+    </section>
+    <section id="general">
+      <div class="num">15</div>
+      <h2>General</h2>
+<p>If any provision of these Terms is found unenforceable, the remaining provisions remain in effect. Our failure to enforce any provision is not a waiver of our right to do so later. You may not assign these Terms without our written consent; we may assign them in connection with a merger, acquisition, or sale of assets. These Terms, together with our Privacy Policy, are the entire agreement between you and MKV Industries about your use of this site.</p>
+    </section>
+    <section id="contact">
+      <div class="num">16</div>
+      <h2>Contact us</h2>
+<p>Questions about these Terms can be sent to:</p>
+      <div class="contact-card">
+        <strong>MKV Industries LLC<br>Henderson, Nevada 89002</strong><br>
+        Email: <span class="fill">[contact email]</span>
+      </div>
+    </section>
+  </article>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div>&copy; 2026 MKV Industries LLC. Veteran-owned training and platform development.</div>
+    <div class="foot-links">
+      <a href="terms.html" aria-current="page">Terms &amp; Conditions</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <span>CAGE 90QJ3 &middot; UEI THP9YFX1MC16</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
