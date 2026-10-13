@@ -10,7 +10,7 @@ Static marketing site for MKV Industries LLC. Plain HTML/CSS, no build step.
 | `privacy.html` | Privacy Policy |
 
 ## Deploy
-Any static host works (Vercel, Netlify, GitHub Pages). Point the host at the repo root; there is no build command and no output directory.
+Hosted on GitHub Pages from `main` / root, with the custom domain `mkvindustries.com` (see `CNAME`). There is no build step; `.nojekyll` tells Pages to serve the files as-is.
 
 ## Contact
 General and privacy requests: support@mkv-ind.com
