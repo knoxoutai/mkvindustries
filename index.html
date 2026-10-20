@@ -80,6 +80,9 @@
   .note a { color:var(--olive2); text-decoration:underline; }
   footer { border-top:1px solid var(--line); padding:28px 0 40px; color:var(--muted); font-size:14px; }
   .foot { display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+  .foxhole-foot { margin:16px 0 0; font-size:11px; line-height:1.3; letter-spacing:.02em; }
+  .foxhole-foot a { color:#e8a0a0; font-weight:400; }
+  .foxhole-foot a:hover { color:#f3c4c4; }
   @keyframes fade { 0%{opacity:0} 8%{opacity:1} 33%{opacity:1} 41%{opacity:0} 100%{opacity:0} }
   @keyframes drift { from { transform:scale(1) translate3d(0,0,0); } to { transform:scale(1.08) translate3d(-1.5%, -1%, 0); } }
   @keyframes scan { from { top:-20%; } to { top:110%; } }
@@ -286,13 +289,16 @@
 </section>
 
 <footer>
-  <div class="wrap foot">
-    <div>&copy; 2026 MKV Industries LLC. Veteran-owned. Identify, develop, train, implement.</div>
-    <div style="display:flex;gap:18px;flex-wrap:wrap">
-      <a href="terms.html">Terms &amp; Conditions</a>
-      <a href="privacy.html">Privacy Policy</a>
-      <span>CAGE 90QJ3 &middot; UEI THP9YFX1MC16</span>
+  <div class="wrap">
+    <div class="foot">
+      <div>&copy; 2026 MKV Industries LLC. Veteran-owned. Identify, develop, train, implement.</div>
+      <div style="display:flex;gap:18px;flex-wrap:wrap">
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <span>CAGE 90QJ3 &middot; UEI THP9YFX1MC16</span>
+      </div>
     </div>
+    <p class="foxhole-foot"><a href="operation-foxhole/">Operation Foxhole</a></p>
   </div>
 </footer>
 <script src="https://link.msgsndr.com/js/form_embed.js"></script>

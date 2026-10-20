@@ -1,0 +1,13 @@
+Operation Foxhole imagery
+
+Generated for layout, saved in this repo (not hotlinked), and graded toward the site palette (#0b0d0c, #8fa36a, #c6d4a4, #d6a45a). These are prototype images. Replace them with owned photography before publishing, then remove this note and the prototype note on the Operation Foxhole page.
+
+- img/foxhole-lobby.jpg       Dark hotel lobby, marble and brass. Hero.
+- img/foxhole-concierge.jpg   Hotel concierge desk, dark wood and brass. Military card.
+- img/foxhole-lounge.jpg      Moody low-lit hotel lounge and bar. Civilian card and contact background.
+- img/foxhole-key.jpg         Brass room key on a black marble desk. Government and clearance card.
+- img/foxhole-velvet.jpg      Olive velvet chair and dark wood interior. Why MKV.
+
+No vault, safe-dial, safe-deposit, or gun-safe photographs are used. No weapons are shown.
+
+The earlier draft credits (Cleveland FRB vault door, Reserve Bank Museum vault door, StockSnap safe dial, safe deposit boxes, gun safes) do not apply to this page.
