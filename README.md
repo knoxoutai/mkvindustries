@@ -11,13 +11,13 @@ Static marketing site for MKV Industries LLC. Plain HTML/CSS, no build step.
 | `privacy.html` | Privacy Policy |
 
 ## Deploy
-Hosted on GitHub Pages from `main` / root, with the custom domain `mkvindustries.com` (see `CNAME`). There is no build step; `.nojekyll` tells Pages to serve the files as-is.
+Hosted on GitHub Pages from `main` / root, with the custom domain `mkvindustries.com` (see `CNAME`). There is no build step; `.nojekyll` tells Pages to serve the files as-is. Pages serves `terms.html` at `/terms` (the address stays `/terms`; `/terms/` is a 404). The same applies to `/privacy` and `/thank-you`. `foxhole/index.html` is served at `/foxhole/`, and `/foxhole` redirects there.
 
 ## Contact
 General and privacy requests: support@mkv-ind.com
 
 ## Contact form
-The form is a GoHighLevel embed (Form 2, `DvuwYqJ1ZB27nOcnUA9F`). In GHL, set **On Submit → Open URL → `https://mkvindustries.com/thank-you.html`**, and point the form's Terms & Conditions checkbox at `https://mkvindustries.com/terms.html` and `https://mkvindustries.com/privacy.html`.
+The form is a GoHighLevel embed (Form 2, `DvuwYqJ1ZB27nOcnUA9F`). Those redirect and checkbox URLs are set in the GHL dashboard, not in this repo. In GHL, set **On Submit → Open URL → `https://mkvindustries.com/thank-you`**, and point the form's Terms & Conditions checkbox at `https://mkvindustries.com/terms` and `https://mkvindustries.com/privacy`.
 
 ## Before launch
 - Replace the AI-generated prototype images in `img/` with owned photography, then remove the prototype note in `index.html`.
