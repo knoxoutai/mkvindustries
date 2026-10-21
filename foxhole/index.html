@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!--
+  DRAFT: Operation Foxhole, MKV Industries. Not published.
+  Review notes for Justin:
+   - [PHONE NUMBER] is a placeholder; no phone number appears on mkvindustries.com. Replace text + tel: link.
+   - Email support@mkv-ind.com is taken from the live Privacy Policy / Terms contact cards. Swap if Foxhole should use a dedicated inbox.
+   - Imagery is generated for layout and graded toward the site palette. Replace with owned photography before publish (credits are in the footer note and in IMAGE-CREDITS.txt).
+   - Compliance wording (FFL transfer / retrieval requirements, records language) must be confirmed before publish.
+-->
+<title>Operation Foxhole | Confidential Firearm Storage | MKV Industries</title>
+<meta name="description" content="Operation Foxhole: discreet, vaulted firearm storage from MKV Industries, a veteran-owned, certified FFL. For military members, civilians, and government and clearance-holding professionals. Your reason is yours. Our job is the vault." />
+<meta name="robots" content="noindex, nofollow" /><!-- DRAFT: remove before publish -->
+<link rel="icon" type="image/png" href="../img/favicon.png" />
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root { --bg:#0b0d0c; --panel:#141816; --line:#2a332d; --text:#e7ece8; --muted:#9aa59d; --body:#c9d1cb; --olive:#8fa36a; --olive2:#c6d4a4; --amber:#d6a45a; }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; scroll-padding-top:80px; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family:Barlow,system-ui,sans-serif; font-size:17px; line-height:1.55; }
+  img { max-width:100%; display:block; }
+  a { color:inherit; text-decoration:none; }
+  .wrap { width:min(1140px, calc(100% - 40px)); margin:0 auto; }
+  nav { position:sticky; top:0; z-index:30; background:rgba(11,13,12,.9); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-inner { display:flex; align-items:center; justify-content:space-between; height:68px; gap:16px; }
+  .brand { display:flex; align-items:center; gap:10px; }
+  .brand img { height:46px; width:auto; display:block; }
+  .nav-links { display:flex; gap:22px; color:var(--muted); font-size:13px; letter-spacing:.1em; text-transform:uppercase; }
+  .nav-links a:hover { color:var(--text); }
+  .btn { display:inline-flex; align-items:center; border:1px solid var(--olive); color:var(--olive2); padding:12px 18px; letter-spacing:.12em; text-transform:uppercase; font-size:13px; font-weight:600; background:transparent; cursor:pointer; font-family:inherit; }
+  .btn.solid { background:var(--olive); color:#111; }
+  .btn:hover { border-color:var(--olive2); }
+  .hero { position:relative; min-height:92vh; display:grid; align-items:end; overflow:hidden; }
+  .hero-bg { position:absolute; inset:0; }
+  .hero-bg img { width:100%; height:100%; object-fit:cover; animation:drift 18s ease-in-out infinite alternate; }
+  .hero-shade { position:absolute; inset:0; background:linear-gradient(90deg, rgba(11,13,12,.88), rgba(11,13,12,.45) 60%, rgba(11,13,12,.3)), linear-gradient(180deg, rgba(11,13,12,.2), rgba(11,13,12,.5) 45%, rgba(11,13,12,.95)); }
+  .scan { position:absolute; inset:0; pointer-events:none; background:repeating-linear-gradient(180deg, transparent 0 3px, rgba(0,0,0,.08) 3px 4px); opacity:.35; }
+  .scan::after { content:""; position:absolute; left:0; right:0; height:18%; background:linear-gradient(180deg, transparent, rgba(143,163,106,.16), transparent); animation:scan 7s linear infinite; }
+  .hero-copy { position:relative; padding:90px 0 64px; }
+  .kicker { color:var(--amber); letter-spacing:.22em; text-transform:uppercase; font-size:12px; font-weight:600; }
+  .op { display:inline-block; border:1px solid var(--line); background:rgba(11,13,12,.6); color:var(--olive2); font-family:"Barlow Condensed",sans-serif; letter-spacing:.24em; text-transform:uppercase; font-size:14px; padding:6px 12px; margin-bottom:18px; }
+  h1,h2,h3 { font-family:"Barlow Condensed",sans-serif; font-weight:600; margin:0 0 .35em; }
+  h1 { font-size:clamp(46px, 7vw, 86px); line-height:.92; max-width:15ch; text-transform:uppercase; }
+  h1 em { font-style:normal; color:var(--olive2); }
+  h2 { font-size:clamp(32px, 4vw, 50px); text-transform:uppercase; line-height:1; }
+  .lede { max-width:64ch; color:#d5ddd7; font-size:18px; }
+  .hero-actions { display:flex; gap:12px; margin-top:26px; flex-wrap:wrap; }
+  .ticker { overflow:hidden; border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:#101412; }
+  .ticker-track { display:flex; gap:42px; white-space:nowrap; padding:14px 0; animation:marquee 28s linear infinite; color:var(--olive2); letter-spacing:.16em; text-transform:uppercase; font-size:13px; font-family:"Barlow Condensed",sans-serif; }
+  section { padding:84px 0; }
+  .sec-head { display:flex; justify-content:space-between; gap:24px; align-items:end; margin-bottom:28px; }
+  .sec-head p { max-width:48ch; color:var(--muted); margin:0; }
+  .grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .grid-4 { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+  .card { border:1px solid var(--line); background:#121614; overflow:hidden; display:flex; flex-direction:column; }
+  .frame { position:relative; min-height:320px; overflow:hidden; }
+  .frame img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; animation:drift 16s ease-in-out infinite alternate; }
+  .frame .tag { position:absolute; left:14px; bottom:14px; background:rgba(11,13,12,.72); border:1px solid var(--line); padding:6px 10px; letter-spacing:.14em; text-transform:uppercase; font-size:12px; color:var(--olive2); }
+  .card .frame { min-height:190px; }
+  .copy { padding:28px; display:flex; flex-direction:column; justify-content:center; }
+  .card .copy { padding:20px 20px 24px; justify-content:flex-start; }
+  .num { color:var(--olive); font-family:"Barlow Condensed",sans-serif; letter-spacing:.14em; font-size:14px; text-transform:uppercase; }
+  .card h3 { font-size:26px; text-transform:uppercase; margin-top:6px; }
+  .copy p { color:var(--muted); margin:0 0 12px; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:auto; padding-top:8px; }
+  .chips span { border:1px solid var(--line); color:var(--olive2); font-size:12px; letter-spacing:.08em; text-transform:uppercase; padding:6px 8px; }
+  .step { border:1px solid var(--line); background:var(--panel); padding:24px 22px 26px; position:relative; }
+  .step::before { content:""; position:absolute; left:0; top:0; width:42px; height:2px; background:var(--olive); }
+  .step h3 { font-size:28px; text-transform:uppercase; margin-top:8px; }
+  .step p { color:var(--muted); margin:0; font-size:16px; }
+  .split { display:grid; grid-template-columns:1.05fr .95fr; gap:28px; align-items:center; }
+  .panel { background:#121614; border:1px solid var(--line); padding:28px; }
+  ul.clean { margin:0; padding:0; list-style:none; }
+  ul.clean li { padding:12px 0; border-bottom:1px solid var(--line); color:var(--muted); }
+  ul.clean li:last-child { border-bottom:0; }
+  ul.clean li strong { color:var(--text); display:block; }
+  .tagline { border-left:3px solid var(--amber); padding:6px 0 6px 18px; margin:22px 0; font-family:"Barlow Condensed",sans-serif; font-size:28px; text-transform:uppercase; letter-spacing:.04em; color:var(--text); line-height:1.1; }
+  details { border-bottom:1px solid var(--line); }
+  details:first-of-type { border-top:1px solid var(--line); }
+  summary { cursor:pointer; list-style:none; padding:18px 40px 18px 0; position:relative; font-family:"Barlow Condensed",sans-serif; font-size:22px; text-transform:uppercase; letter-spacing:.04em; }
+  summary::-webkit-details-marker { display:none; }
+  summary::after { content:"+"; position:absolute; right:6px; top:14px; color:var(--olive); font-size:26px; }
+  details[open] summary::after { content:"\2212"; }
+  details p { color:var(--muted); margin:0 0 18px; max-width:80ch; }
+  .note { color:var(--muted); font-size:13px; }
+  .note a, .contact-lines a { color:var(--olive2); text-decoration:underline; text-underline-offset:3px; }
+  .ph { color:var(--amber); border-bottom:1px dashed var(--amber); }
+  .cta { position:relative; overflow:hidden; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .cta .bg { position:absolute; inset:0; }
+  .cta .bg img { width:100%; height:100%; object-fit:cover; opacity:.22; }
+  .cta .bg::after { content:""; position:absolute; inset:0; background:linear-gradient(90deg, rgba(11,13,12,.92), rgba(11,13,12,.55)); }
+  .cta .wrap { position:relative; }
+  .brief { display:grid; grid-template-columns:1.1fr .9fr; gap:32px; align-items:center; }
+  .contact-lines { display:grid; gap:0; }
+  .contact-lines li { padding:14px 0; }
+  .contact-lines .val { font-family:"Barlow Condensed",sans-serif; font-size:26px; letter-spacing:.04em; color:var(--text); }
+  .trust { display:grid; grid-template-columns:repeat(5,1fr); border:1px solid var(--line); background:#101412; }
+  .trust div { padding:18px; border-right:1px solid var(--line); }
+  .trust div:last-child { border-right:0; }
+  .trust strong { display:block; font-family:"Barlow Condensed",sans-serif; letter-spacing:.14em; text-transform:uppercase; font-size:12px; color:var(--olive); font-weight:600; }
+  .trust span { color:var(--text); font-size:15px; }
+  footer { border-top:1px solid var(--line); padding:36px 0 40px; color:var(--muted); font-size:14px; }
+  .foot { display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+  .foot-links { display:flex; gap:18px; flex-wrap:wrap; }
+  .foot-contact { display:flex; gap:22px; flex-wrap:wrap; margin-bottom:18px; padding-bottom:18px; border-bottom:1px solid var(--line); }
+  .foot-contact a { color:var(--olive2); }
+  .foot-contact b { color:var(--text); font-weight:600; letter-spacing:.12em; text-transform:uppercase; font-size:12px; margin-right:8px; }
+  .credits { margin-top:18px; font-size:12px; color:#6f7a72; }
+  @keyframes drift { from { transform:scale(1) translate3d(0,0,0); } to { transform:scale(1.08) translate3d(-1.5%, -1%, 0); } }
+  @keyframes scan { from { top:-20%; } to { top:110%; } }
+  @keyframes marquee { from { transform:translateX(0); } to { transform:translateX(-50%); } }
+  @media (max-width:980px) { .grid-4 { grid-template-columns:repeat(2,1fr); } .trust { grid-template-columns:repeat(2,1fr); } .trust div { border-bottom:1px solid var(--line); } }
+  @media (max-width:860px) {
+    .nav-links { display:none; }
+    .split, .brief, .grid-3, .grid-4, .sec-head, .trust { grid-template-columns:1fr; display:grid; }
+    .frame { min-height:220px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .hero-bg img, .frame img, .scan::after, .ticker-track { animation:none; } }
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap nav-inner">
+    <a class="brand" href="../index.html" aria-label="MKV Industries home"><img src="../img/mkv-logo.png" alt="MKV Industries" width="104" height="46" /></a>
+    <div class="nav-links">
+      <a href="../index.html#work">Approach</a>
+      <a href="../index.html#platforms">Experience</a>
+      <a href="../index.html#method">Engagement</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="btn" href="#contact">Start intake</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-bg"><img src="../img/foxhole-lobby.jpg" alt="Dark hotel lobby with marble columns and warm brass light" /></div>
+  <div class="hero-shade"></div>
+  <div class="scan" aria-hidden="true"></div>
+  <div class="wrap hero-copy">
+    <div class="op">Operation Foxhole</div>
+    <div class="kicker">Confidential firearm storage &middot; Certified FFL &middot; Veteran-owned</div>
+    <h1>Your reason is yours. <em>Our job is the vault.</em></h1>
+    <p class="lede">Operation Foxhole is discreet, vaulted firearm storage for service members, civilians, and government and clearance-holding professionals who would rather not keep firearms at home right now. MKV Industries is a certified FFL. We take custody with care, keep the record straight, and hand it back when you're ready.</p>
+    <div class="hero-actions">
+      <a class="btn solid" href="#contact">Start a confidential intake</a>
+      <a class="btn" href="#method">How it works</a>
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Certified FFL</span><span>Vaulted storage</span><span>Discreet handling</span><span>Professional records</span><span>Military</span><span>Civilian</span><span>Government &amp; clearance holders</span><span>Veteran-owned</span><span>Built to last</span>
+    <span>Certified FFL</span><span>Vaulted storage</span><span>Discreet handling</span><span>Professional records</span><span>Military</span><span>Civilian</span><span>Government &amp; clearance holders</span><span>Veteran-owned</span><span>Built to last</span>
+  </div>
+</div>
+
+<section id="who">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Who Foxhole is for.</h2>
+      <p>Sometimes the right call is to keep a firearm out of the house for a while. A deployment, a move, a family situation, a career consideration. Whatever drives the decision, it stays with you.</p>
+    </div>
+    <div class="grid-3">
+      <article class="card">
+        <div class="frame"><img src="../img/foxhole-concierge.jpg" alt="Hotel concierge desk in dark wood and brass" /><span class="tag">Military</span></div>
+        <div class="copy"><div class="num">01 &middot; Service members</div><h3>Military</h3><p>Active duty, Guard, Reserve, and veterans. Deployments, PCS moves, barracks rules, and time away from home are all reasons to put a firearm somewhere secure and accounted for.</p><div class="chips"><span>Deployment</span><span>PCS / relocation</span><span>Extended travel</span></div></div>
+      </article>
+      <article class="card">
+        <div class="frame"><img src="../img/foxhole-lounge.jpg" alt="Low-lit hotel lounge with a dark wood bar" /><span class="tag">Civilian</span></div>
+        <div class="copy"><div class="num">02 &middot; Private owners</div><h3>Civilian</h3><p>Owners who want firearms out of the home for a period of time, handled by professionals and stored to a standard most homes can't match.</p><div class="chips"><span>Household changes</span><span>Travel</span><span>Peace of mind</span></div></div>
+      </article>
+      <article class="card">
+        <div class="frame"><img src="../img/foxhole-key.jpg" alt="Brass room key on a black marble hotel desk" /><span class="tag">Gov &amp; clearance</span></div>
+        <div class="copy"><div class="num">03 &middot; Public servants</div><h3>Government &amp; clearance holders</h3><p>For professionals whose careers depend on judgment and discretion. A quiet, documented storage arrangement with a licensed dealer, handled by people who understand what's at stake.</p><div class="chips"><span>Cleared personnel</span><span>Agency employees</span><span>Contractors</span></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="method" style="background:#101412">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Brief. Intake. Vault. Retrieve.</h2>
+      <p>Four phases, each one documented. You always know where your firearm is, who handled it, and what it takes to get it back.</p>
+    </div>
+    <div class="grid-4">
+      <div class="step"><div class="num">01 &middot; Brief</div><h3>Private consult</h3><p>A short, confidential conversation to understand what you're storing, for how long, and how you'd like to be contacted. Nothing more than we need.</p></div>
+      <div class="step"><div class="num">02 &middot; Intake</div><h3>Documented intake</h3><p>By appointment. Each firearm is inspected, tagged, photographed for condition, and logged in our FFL records. You receive a written storage receipt.</p></div>
+      <div class="step"><div class="num">03 &middot; Vault</div><h3>Secure storage</h3><p>Firearms are held in a locked, access-controlled vault, cased and individually identified. Access is limited to authorized MKV personnel.</p></div>
+      <div class="step"><div class="num">04 &middot; Retrieve</div><h3>Scheduled return</h3><p>When you're ready, schedule a pickup. We verify identity and complete the transfer steps the law requires, then the firearm goes home with you.</p></div>
+    </div>
+    <!-- CONFIRM: intake/retrieval steps (condition photos, receipts, ID verification, ATF Form 4473 / NICS on return, any state-specific steps) reflect actual MKV procedure. -->
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap split">
+    <div class="frame" style="min-height:440px;border:1px solid var(--line)"><img src="../img/foxhole-velvet.jpg" alt="Olive velvet chair in a dark wood hotel room" /><span class="tag">Why MKV</span></div>
+    <div class="panel">
+      <div class="kicker">Why MKV Industries</div>
+      <h3 style="font-size:34px;text-transform:uppercase">Custody you can account for.</h3>
+      <ul class="clean">
+        <li><strong>Certified FFL</strong>A federally licensed firearms dealer, operating to the recordkeeping standard that license demands.</li>
+        <li><strong>Secure facility</strong>Locked, access-controlled vault storage. Not a closet, not a back room.</li>
+        <li><strong>Discreet handling</strong>Appointment-only intake and pickup, minimal contact preferences honored, and your reasons kept between you and us.</li>
+        <li><strong>Professional records</strong>Every firearm logged in and out, with a written receipt at each step.</li>
+        <li><strong>Veteran-owned</strong>Run by people who have carried the responsibility and treat it that way.</li>
+      </ul>
+      <p class="note">Prototype imagery is generated for layout. Replace it with owned photography before publish.</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="background:#101412">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Frequently asked.</h2>
+      <p>Short answers here. Anything specific to your situation, ask us directly.</p>
+    </div>
+    <details open>
+      <summary>Do I have to explain why I'm storing a firearm?</summary>
+      <p>No. Your reason is yours. We need the information required to identify you and the firearm and to keep accurate records. Your personal circumstances aren't part of that.</p>
+    </details>
+    <details>
+      <summary>Who can see my information?</summary>
+      <p>Access is limited to authorized MKV personnel. As a licensed dealer, we are required to keep certain firearm records and make them available to federal authorities as the law provides. We don't share your information beyond that or what the law requires.</p>
+      <!-- CONFIRM: wording on records access / ATF inspection and any state reporting obligations. -->
+    </details>
+    <details>
+      <summary>What do I need to bring to intake?</summary>
+      <p>A valid government-issued photo ID, the firearm unloaded and cased, and any accessories you want stored with it. We'll confirm the full checklist when we schedule your appointment.</p>
+    </details>
+    <details>
+      <summary>How do I get my firearm back?</summary>
+      <p>Contact us to schedule a pickup. We'll verify your identity and complete any transfer paperwork and background check required under federal and applicable state law before release. If you're not able to pass a required check, we'll walk you through your options.</p>
+      <!-- CONFIRM: exact retrieval requirements (4473 / NICS for storage returns) and the policy if a return is denied. -->
+    </details>
+    <details>
+      <summary>How long can I store, and what does it cost?</summary>
+      <p>Short-term and long-term arrangements are available. Pricing depends on the number of firearms and the duration. Reach out for a quote. <span class="ph">[CONFIRM: terms, minimums, and pricing]</span></p>
+    </details>
+    <details>
+      <summary>What can you store?</summary>
+      <p>Firearms you can lawfully possess, along with cases and accessories. Some items may require additional review. Ask before intake if you're unsure. <span class="ph">[CONFIRM: accepted items, e.g. NFA items, ammunition]</span></p>
+    </details>
+  </div>
+</section>
+
+<section id="contact" class="cta">
+  <div class="bg"><img src="../img/foxhole-lounge.jpg" alt="" /></div>
+  <div class="wrap brief">
+    <div>
+      <div class="kicker">Contact</div>
+      <h2>Start a confidential intake.</h2>
+      <div class="tagline">Your reason is yours.<br />Our job is the vault.</div>
+      <p class="lede">Call or email to schedule a private consult. We'll keep the conversation short, the details limited to what's needed, and the follow-up on your terms.</p>
+      <div class="hero-actions">
+        <a class="btn solid" href="tel:[PHONE NUMBER]">Call <span>&nbsp;[PHONE NUMBER]</span></a>
+        <a class="btn" href="mailto:support@mkv-ind.com?subject=Operation%20Foxhole%20inquiry">Email us</a>
+      </div>
+    </div>
+    <div class="panel">
+      <ul class="clean contact-lines">
+        <li><strong>Phone</strong><span class="val"><a href="tel:[PHONE NUMBER]" class="ph">[PHONE NUMBER]</a></span></li>
+        <li><strong>Email</strong><span class="val"><a href="mailto:support@mkv-ind.com?subject=Operation%20Foxhole%20inquiry">support@mkv-ind.com</a></span></li>
+        <li><strong>Location</strong><span class="val">Henderson, Nevada</span></li>
+        <li><strong>Intake &amp; pickup</strong><span class="val">By appointment only</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="wrap" style="padding:36px 0">
+  <div class="trust">
+    <div><strong>Veteran-Owned Business</strong><span>MKV Industries LLC</span></div>
+    <div><strong>License</strong><span>Certified FFL</span></div>
+    <div><strong>CAGE Code</strong><span>90QJ3</span></div>
+    <div><strong>UEI</strong><span>THP9YFX1MC16</span></div>
+    <div><strong>Registration</strong><span>Active in SAM.gov</span></div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-contact">
+      <span><b>Phone</b><a href="tel:[PHONE NUMBER]">[PHONE NUMBER]</a></span>
+      <span><b>Email</b><a href="mailto:support@mkv-ind.com">support@mkv-ind.com</a></span>
+      <span><b>Operation Foxhole</b>Confidential firearm storage by appointment</span>
+    </div>
+    <div class="foot">
+      <div>&copy; 2026 MKV Industries LLC. Veteran-owned. Identify, develop, train, implement.</div>
+      <div class="foot-links">
+        <a href="../terms.html">Terms &amp; Conditions</a>
+        <a href="../privacy.html">Privacy Policy</a>
+        <span>CAGE 90QJ3 &middot; UEI THP9YFX1MC16</span>
+      </div>
+    </div>
+    <p class="credits">Prototype imagery is generated for layout. Replace it with owned photography before publish. Lobby, concierge desk, lounge, brass room key, and velvet interior were generated for this draft and graded toward the site palette. No vault, safe, or firearm photographs are used.</p>
+  </div>
+</footer>
+</body>
+</html>
