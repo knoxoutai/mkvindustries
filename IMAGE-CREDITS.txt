@@ -1,6 +1,6 @@
 Operation Foxhole imagery
 
-Generated for layout, saved in this repo (not hotlinked), and graded toward the site palette (#0b0d0c, #8fa36a, #c6d4a4, #d6a45a). These are prototype images. Replace them with owned photography before publishing, then remove this note and the prototype note on the Operation Foxhole page.
+Generated for layout, saved in this repo (not hotlinked), and graded toward the site palette (#0b0d0c, #8fa36a, #c6d4a4, #d6a45a). These are prototype images. Replace them with owned photography before publishing, then remove this note.
 
 - img/foxhole-lobby.jpg       Dark hotel lobby, marble and brass. Hero.
 - img/foxhole-concierge.jpg   Hotel concierge desk, dark wood and brass. Military card.
